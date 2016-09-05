@@ -1,13 +1,20 @@
 ---
 layout: default
 ---
-<a href="http://www.reactivemanifesto.org/"> 
-  <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" 
-      src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-red-right.png"> 
-</a>
 <div class="home">
-  <h1 class="page-heading">Posts</h1>
+  <h2 class="page-heading">Sections</h2>
+  <ol>
+    <li><strong>Introduction</strong></li>
+    <li><a href="messaging-with-actors.html">Messaging with Actors</a></li>
+    <li><a href="messaging-channels.html">Messaging Channels</a></li>
+    <li><a href="message-construction.html">Message Construction</a></li>
+    <li><a href="message-routing.html">Message Routing</a></li>
+    <li><a href="message-transformation.html">Message Transformation</a></li>
+    <li><a href="message-endpoints.html">Message Endpoints</a></li>
+    <li><a href="system-management-and-infrastructure.html">System Management and Infrastructure</a></li>
+  </ol>
 
+  <h1 class="page-heading">Posts</h1>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -20,6 +27,6 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
