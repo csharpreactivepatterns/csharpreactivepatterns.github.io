@@ -33,7 +33,7 @@ categories: akka messaging channel .net csharp
 </ul>
 
 <h2 class="page-heading"><a name="Datatype">Datatype Channel</a></h2>
-{% highlight csharp linenos %}
+{% highlight csharp linenos=table %}
 class Program
 {
     static void Main(string[] args)
