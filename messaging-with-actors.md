@@ -2,6 +2,7 @@
 layout: page
 title: Messaging with Actors
 permalink: /messaging-with-actors/
+categories: akka messaging actor .net csharp
 ---
 <a name="Sections">Sections</a>
 <ul>
