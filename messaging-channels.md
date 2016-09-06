@@ -76,7 +76,8 @@ class Program
             var nextFilter = system.ActorOf<NextFilter>("nextFilter");
             var authenticator =
                 system.ActorOf(Props.Create(() => 
-                    new Authenticator(nextFilter, invalidMessageChannel)), "authenticator");
+                    new Authenticator(nextFilter, invalidMessageChannel)), 
+                    "authenticator");
             authenticator.Tell("Invalid message");
         }
         Console.ReadLine();
@@ -87,7 +88,7 @@ public class InvalidMessageChannel : ReceiveActor
     public InvalidMessageChannel()
     {
         Receive<InvalidMessage>(x => 
-            Console.WriteLine("InvalidMessageChannel: InvalidMessage received, message") );
+            Console.WriteLine("InvalidMessageChannel:InvalidMessage received, message"));
     }
 }
 public class Authenticator : ReceiveActor
@@ -99,7 +100,8 @@ public class Authenticator : ReceiveActor
             var text = Encoding.Default.GetString(x.Message);
             Console.WriteLine($"Decrypter: processing {text}");
             var orderText = text.Replace("(encryption)", string.Empty);
-            nextFilter.Tell(new ProcessIncomingOrder (Encoding.Default.GetBytes(orderText)));
+            nextFilter.Tell(new ProcessIncomingOrder 
+                (Encoding.Default.GetBytes(orderText)));
         });
         ReceiveAny(x => invalidMessageChannel.Tell(new InvalidMessage (x)));
     }
@@ -169,12 +171,14 @@ public class StockTrader : ReceiveActor
         Receive<ExecuteBuyOrder>(x =>
         {
             var result = buyerService.PlaceBuyOrder();
-            tradingBus.Tell(new TradingNotification ("BuyOrderExecuted", result));
+            tradingBus.Tell(
+                new TradingNotification ("BuyOrderExecuted", result));
         });
         Receive<ExecuteSellOrder>(x =>
         {
             var result = buyerService.PlaceBuyOrder();
-            tradingBus.Tell(new TradingNotification ("SellOrderExecuted", result));
+            tradingBus.Tell(
+                new TradingNotification ("SellOrderExecuted", result));
         });
 
         tradingBus.Tell(new RegisterCommandHandler());
@@ -204,8 +208,10 @@ class Program
         using (var system = ActorSystem.Create("system"))
         {
             var inventoryProductAllocationBridge =
-                system.ActorOf<InventoryProductAllocationBridge>("inventoryProductAllocationBridge");
-            inventoryProductAllocationBridge.Tell(new RabbitMQTextMessage("Rabbit test message"));
+                system.ActorOf<InventoryProductAllocationBridge>
+                ("inventoryProductAllocationBridge");
+            inventoryProductAllocationBridge.Tell(
+                new RabbitMQTextMessage("Rabbit test message"));
         }
         ReadLine();
     }
@@ -216,14 +222,17 @@ public class InventoryProductAllocationBridge : ReceiveActor
     {
         Receive<RabbitMQTextMessage>(x =>
         {
-            WriteLine($"InventoryProductAllocationBridge: received {x.Message}");
-            var inventoryProductAllocation = TranslatedToInventoryProductAlloction(x.Message);
-            WriteLine($"InventoryProductAllocationBridge: translated {inventoryProductAllocation}");
+            WriteLine($"InventoryProductAllocationBridge:received {x.Message}");
+            var inventoryProductAllocation = 
+                TranslatedToInventoryProductAlloction(x.Message);
+            WriteLine($"InventoryProductAllocationBridge:translated {inventoryProductAllocation}");
             AcknowledgeDelivery(x);
         });
     }
-    private void AcknowledgeDelivery(RabbitMQTextMessage textMessage) => WriteLine($"InventoryProductAllocationBridge: acknowledged {textMessage.Message}");
-    private string TranslatedToInventoryProductAlloction(string message) => $"Inventory product alloction for {message}";
+    private void AcknowledgeDelivery(RabbitMQTextMessage textMessage) 
+        => WriteLine($"InventoryProductAllocationBridge: acknowledged {textMessage.Message}");
+    private string TranslatedToInventoryProductAlloction(string message) 
+        => $"Inventory product alloction for {message}";
 }
 {% endhighlight %}
 <a href="https://github.com/berczeck/csharpreactivepatterns/blob/master/MessagingChannels/Message%20Bridge/Program.cs" 
@@ -256,9 +265,12 @@ class Program
             
             tradingBus.Tell(new Status());
             
-            tradingBus.Tell(new TradingCommand ("ExecuteBuyOrder", new ExecuteBuyOrder()));
-            tradingBus.Tell(new TradingCommand ("ExecuteSellOrder" , new ExecuteSellOrder()));
-            tradingBus.Tell(new TradingCommand ("ExecuteBuyOrder", new ExecuteBuyOrder()));
+            tradingBus.Tell(new TradingCommand ("ExecuteBuyOrder", 
+                new ExecuteBuyOrder()));
+            tradingBus.Tell(new TradingCommand ("ExecuteSellOrder" , 
+                new ExecuteSellOrder()));
+            tradingBus.Tell(new TradingCommand ("ExecuteBuyOrder", 
+                new ExecuteBuyOrder()));
         }
         Console.ReadLine();
     }
