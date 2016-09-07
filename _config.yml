@@ -24,6 +24,7 @@ url: "https://csharpreactivepatterns.github.io" # the base hostname & protocol f
 twitter_username: berczeck
 github_username:  berczeck
 blog: http://code2read.com/
+github_repository: https://github.com/berczeck/csharpreactivepatterns/blob/master/
 # Build settings
 markdown: kramdown
 theme: minima
