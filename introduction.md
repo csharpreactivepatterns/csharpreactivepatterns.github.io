@@ -3,6 +3,17 @@ layout: page
 title: Introduction
 permalink: /introduction/
 ---
+<h2 class="page-heading"><a name="Sections">Sections</a></h2>
+  <ol>
+    <li>Introduction</li>
+    <li><a href="/messaging-with-actors/">Messaging with Actors</a></li>
+    <li>Messaging Channels</li>
+    <li>Message Construction</li>
+    <li>Message Routing</li>
+    <li>Message Transformation</li>
+    <li>Message Endpoints</li>
+    <li>System Management and Infrastructure</li>
+  </ol>
 
 This tutorial is intended to give an introduction to using <a href="http://getakka.net/">Akka .NET</a> by creating a simple HelloWorld actor using C#.
 

@@ -16,9 +16,7 @@
 title: "Reactive Messaging Patterns with c# and Akka.NET"
 email: berczeck69@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  C# Reactive Patterns in Akka.NET is a web site with the aim to share information about Akka.NET and reactive patterns to everyone who develop applications applying  principles of the reactive manifesto. The original examples were written in Scala in the book Reactive Messaging Patterns with the Actor Model written by Vaughn Vernon, then were translated to F# and finally in c#.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://csharpreactivepatterns.github.io" # the base hostname & protocol for your site
 twitter_username: berczeck

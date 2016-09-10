@@ -8,25 +8,34 @@ For more details and full analysis of each pattern described in this section, pl
 <a href="http://www.informit.com/store/reactive-messaging-patterns-with-the-actor-model-applications-9780133846836">Reactive Messaging Patterns with the Actor Model</a> 
 by <a href="https://twitter.com/vaughnvernon">Vaughn Vernon</a>.
 
-<a name="Sections">Sections</a>
-<ul>
-    <li>
-      <a href="#MessageChannel">Message Channel</a>
-    </li>
-    <li>    
-      <a href="#Message">Message</a>
-    </li>
-    <li>
-      <a href="#PipesFilters">Pipes and filters</a>
-    </li>
-    <li>
-      <a href="#MessageRouter">Message Router</a>
-    </li>
-    <li>
-      <a href="#MessageEndpoint">Message Endpoint</a>
-    </li>
-</ul>
-
+<h2 class="page-heading"><a name="Sections">Sections</a></h2>
+  <ol>
+    <li><a href="/introduction/">Introduction</a></li>
+    <li>Messaging with Actors</li>
+    <ul>
+        <li>
+        <a href="#MessageChannel">Message Channel</a>
+        </li>
+        <li>    
+        <a href="#Message">Message</a>
+        </li>
+        <li>
+        <a href="#PipesFilters">Pipes and filters</a>
+        </li>
+        <li>
+        <a href="#MessageRouter">Message Router</a>
+        </li>
+        <li>
+        <a href="#MessageEndpoint">Message Endpoint</a>
+        </li>
+    </ul>
+    <li>Messaging Channels</li>
+    <li>Message Construction</li>
+    <li>Message Routing</li>
+    <li>Message Transformation</li>
+    <li>Message Endpoints</li>
+    <li>System Management and Infrastructure</li>
+  </ol>
 <h2 class="page-heading"><a name="MessageChannel">Message Channel</a></h2>
 Connect the applications using a Message Channel, where one application writes information to the channel and the other one reads that information from the channel. 
 When using Akka.NET, this concept is represented by the actor's mailbox.
