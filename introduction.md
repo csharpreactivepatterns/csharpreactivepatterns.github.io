@@ -8,6 +8,14 @@ This tutorial is intended to give an introduction to using <a href="http://getak
 <h2 class="page-heading"><a name="Sections">Sections</a></h2>
   <ol>
     <li>Introduction</li>
+    <ul>
+        <li>
+        <a href="#SetUpProject">Set up your project</a>
+        </li>
+        <li>    
+        <a href="#CreateFirstActor">Create your first actor</a>
+        </li>
+    </ul>
     <li><a href="/messaging-with-actors/">Messaging with Actors</a></li>
     <li>Messaging Channels</li>
     <li>Message Construction</li>
@@ -17,17 +25,16 @@ This tutorial is intended to give an introduction to using <a href="http://getak
     <li>System Management and Infrastructure</li>
   </ol>
 
-<h2 class="page-heading">Set up your project</h2>
+<h2 class="page-heading"><a name="SetUpProject">Set up your project</a></h2>
 <ul>
 <li>Create a new C# Console Application.</li>
 <li>Open up the Package Manager Console and type: </li>
 {% gist 0d7288d673c08370349227d064dfd46a %}
-
 <li>Import the next namespaces:</li>
 {% gist 52741f59efdd9cbb40015072d3fd7344 %}
-
 </ul>
-<h2 class="page-heading">Create your first actor</h2>
+<p><a href="#Sections">Sections</a></p>
+<h2 class="page-heading"><a name="CreateFirstActor">Create your first actor</a></h2>
 <ul>
 <li>Create a message type that our actor will respond to:</li>
 {% gist 52741f59efdd9cbb40015072d3fd7344 %}
@@ -38,3 +45,4 @@ This tutorial is intended to give an introduction to using <a href="http://getak
 <li>For more information read the <a href="http://getakka.net/docs/" target="_blank">Akka.Net documentation</a></li>
 <li>Download the complete code <a href="{{ site.github_repository }}/Introduction/HelloWorldAkka/" target="_blank">here</a></li>
 </ul>
+<p><a href="#Sections">Sections</a></p>
