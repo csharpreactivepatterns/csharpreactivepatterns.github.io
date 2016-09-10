@@ -3,6 +3,8 @@ layout: page
 title: Introduction
 permalink: /introduction/
 ---
+This tutorial is intended to give an introduction to using <a href="http://getakka.net/">Akka .NET</a> by creating a simple HelloWorld actor using C#.
+
 <h2 class="page-heading"><a name="Sections">Sections</a></h2>
   <ol>
     <li>Introduction</li>
@@ -14,8 +16,6 @@ permalink: /introduction/
     <li>Message Endpoints</li>
     <li>System Management and Infrastructure</li>
   </ol>
-
-This tutorial is intended to give an introduction to using <a href="http://getakka.net/">Akka .NET</a> by creating a simple HelloWorld actor using C#.
 
 <h2 class="page-heading">Set up your project</h2>
 <ul>
