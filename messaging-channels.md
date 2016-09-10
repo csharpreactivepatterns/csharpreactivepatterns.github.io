@@ -4,6 +4,10 @@ title: Messaging Channels
 permalink: /messaging-channels/
 categories: akka messaging channel .net csharp
 ---
+For more details and full analysis of each pattern described in this section, please refer to <b>Chapter 5</b> of 
+<a href="http://www.informit.com/store/reactive-messaging-patterns-with-the-actor-model-applications-9780133846836">Reactive Messaging Patterns with the Actor Model</a> 
+by <a href="https://twitter.com/vaughnvernon">Vaughn Vernon</a>.
+
 <a name="Sections">Sections</a>
 <ul>
     <li>
