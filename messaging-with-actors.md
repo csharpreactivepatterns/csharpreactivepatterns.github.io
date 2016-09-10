@@ -47,6 +47,7 @@ When using Akka.NET, this concept is represented by the actor's mailbox.
 
 <h2 class="page-heading"><a name="Message">Message</a></h2>
 Package the information into a Message, a data record that the messaging system can transmit through a message channel.
+Messages are sent between actors to exchange information.
 
 {% gist 298542716b078652b292639ab94d0f56 %}
 <a href="{{ site.github_repository }}MessagingWithActors/Message/Program.cs" 
@@ -55,6 +56,7 @@ Package the information into a Message, a data record that the messaging system 
 
 <h2 class="page-heading"><a name="PipesFilters">Pipes and Filters</a></h2>
 Use the Pipes and Filters architectural style to divide a larger processing task into a sequence of smaller, independent processing steps (Filters) that are connected by channels (Pipes).
+This pattern allows to chain actors together while keeping them independent.
 
 {% gist b5b4dfaaf816c7b5b30160926fbd0df2 %}
 <a href="{{ site.github_repository }}MessagingWithActors/Pipes%20and%20Filters/Program.cs" 
@@ -71,6 +73,7 @@ Insert a special filter, a Message Router, which consumes a Message from one Mes
 
 <h2 class="page-heading"><a name="MessageEndpoint">Message Endpoint</a></h2>
 Connect an application to a messaging channel using a Message Endpoint, a client of the messaging system that the application can then use to send or receive messages.
+When using Akka.NET they are actors.
 
 {% gist 54832755f79b4fc7b238e2d0401dc9a9 %}
 <a href="{{ site.github_repository }}MessagingWithActors/Message%20Endpoint/Program.cs" 
