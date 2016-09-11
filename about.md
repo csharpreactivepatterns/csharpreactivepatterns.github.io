@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-<p class="rss-subscribe"> Hi, my name is <a href="https://twitter.com/berczeck">Luis Alexander Aldazabal Gil</a> a Software Craftsman from Lima-Peru a big fan of Heavy metal and also of <a href="http://getakka.net/">Akka .NET</a>.
+<p class="rss-subscribe"> Hi, my name is <a href="https://twitter.com/berczeck">Luis Alexander Aldazabal Gil</a> 
+a Software Craftsman from Lima-Peru and a big fan of <a href="http://getakka.net/">Akka .NET</a>.
 This page was created with the aim to share information about Akka.Net and reactive patterns.</p>
 <p class="rss-subscribe">I really encourage you to read these books:</p>
 <ul>
