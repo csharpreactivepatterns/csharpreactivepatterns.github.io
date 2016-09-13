@@ -3,8 +3,9 @@ layout: page
 title: Introduction
 permalink: /introduction/
 ---
+<p class="rss-subscribe">
 This tutorial is intended to give an introduction to using <a href="http://getakka.net/">Akka .NET</a> by creating a simple HelloWorld actor using C#.
-
+</p>
 <h2 class="page-heading"><a name="Sections">Sections</a></h2>
   <ol>
     <li>Introduction</li>

@@ -37,3 +37,13 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+.rss-subscribe {
+    text-align: justify;
+}
+
+.img-book {
+    float : right; 
+    margin-left: 15px; 
+    height: 11rem;
+}
