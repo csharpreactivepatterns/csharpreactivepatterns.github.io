@@ -12,7 +12,7 @@ by <a href="https://twitter.com/vaughnvernon">Vaughn Vernon</a>.
 <h2 class="page-heading"><a name="Sections">Sections</a></h2>
   <ol>
     <li><a href="/introduction/">Introduction</a></li>
-    <li>Messaging with Actors</li>
+    <li>Messaging with Actors
     <ul>
         <li>
         <a href="#MessageChannel">Message Channel</a>
@@ -29,8 +29,8 @@ by <a href="https://twitter.com/vaughnvernon">Vaughn Vernon</a>.
         <li>
         <a href="#MessageEndpoint">Message Endpoint</a>
         </li>
-    </ul>
-    <li>Messaging Channels</li>
+    </ul></li>
+    <li><a href="/messaging-channels/">Messaging Channels</a></li>
     <li>Message Construction</li>
     <li>Message Routing</li>
     <li>Message Transformation</li>

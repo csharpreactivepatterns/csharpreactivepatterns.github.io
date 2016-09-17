@@ -8,7 +8,7 @@ This tutorial is intended to give an introduction to using <a href="http://getak
 </p>
 <h2 class="page-heading"><a name="Sections">Sections</a></h2>
   <ol>
-    <li>Introduction</li>
+    <li>Introduction
     <ul>
         <li>
         <a href="#SetUpProject">Set up your project</a>
@@ -16,9 +16,9 @@ This tutorial is intended to give an introduction to using <a href="http://getak
         <li>    
         <a href="#CreateFirstActor">Create your first actor</a>
         </li>
-    </ul>
+    </ul></li>
     <li><a href="/messaging-with-actors/">Messaging with Actors</a></li>
-    <li>Messaging Channels</li>
+    <li><a href="/messaging-channels/">Messaging Channels</a></li>
     <li>Message Construction</li>
     <li>Message Routing</li>
     <li>Message Transformation</li>
