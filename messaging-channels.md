@@ -3,6 +3,7 @@ layout: page
 title: Messaging Channels
 permalink: /messaging-channels/
 categories: akka messaging channel .net csharp
+comments: true
 ---
 <p class="rss-subscribe">
 For more details and full analysis of each pattern described in this section, please refer to <b>Chapter 5</b> of 
@@ -134,3 +135,5 @@ The Message Bus pattern connects different applications in a decoupled fashion.
 <a href="{{ site.github_repository }}MessagingChannels/Message%20Bus/Program.cs" 
     target="_blank">Complete Code</a>
 <p><a href="#Sections">Sections</a></p>
+
+{% include disqus-section.html %}

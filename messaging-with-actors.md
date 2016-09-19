@@ -3,6 +3,7 @@ layout: page
 title: Messaging with Actors
 permalink: /messaging-with-actors/
 categories: akka messaging actor .net csharp
+comments: true
 ---
 <p class="rss-subscribe">
 For more details and full analysis of each pattern described in this section, please refer to <b>Chapter 4</b> of 
@@ -90,3 +91,5 @@ When using Akka.NET they are actors.
 <a href="{{ site.github_repository }}MessagingWithActors/Message%20Endpoint/Program.cs" 
     target="_blank">Complete Code</a>
 <p><a href="#Sections">Sections</a></p>
+
+{% include disqus-section.html %}

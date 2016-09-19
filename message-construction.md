@@ -3,6 +3,7 @@ layout: page
 title: Messaging Construction
 permalink: /message-construction/
 categories: akka messaging .net csharp
+comments: true
 ---
 <p class="rss-subscribe">
 For more details and full analysis of each pattern described in this section, please refer to <b>Chapter 6</b> of 
@@ -104,3 +105,5 @@ Design a data format that includes a Format Indicator, so that the message speci
 <a href="{{ site.github_repository }}MessageConstruction/Format%20Indicator/Program.cs" 
     target="_blank">Complete Code</a>
 <p><a href="#Sections">Sections</a></p>
+
+{% include disqus-section.html %}

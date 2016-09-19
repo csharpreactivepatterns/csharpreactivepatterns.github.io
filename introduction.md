@@ -2,6 +2,7 @@
 layout: page
 title: Introduction
 permalink: /introduction/
+comments: true
 ---
 <p class="rss-subscribe">
 This tutorial is intended to give an introduction to using <a href="http://getakka.net/">Akka .NET</a> by creating a simple HelloWorld actor using C#.
@@ -44,6 +45,8 @@ This tutorial is intended to give an introduction to using <a href="http://getak
 <li>Create an ActorSystem and calling ActorOf</li>
 {% gist 5e439641584dd5c86378bfcfb3ce3c8f %}
 <li>For more information read the <a href="http://getakka.net/docs/" target="_blank">Akka.Net documentation</a></li>
-<li>Download the complete code <a href="{{ site.github_repository }}/Introduction/HelloWorldAkka/" target="_blank">here</a></li>
+<li>Download the complete code <a href="{{ site.github_repository }}Introduction/HelloWorldAkka/" target="_blank">here</a></li>
 </ul>
 <p><a href="#Sections">Sections</a></p>
+
+{% include disqus-section.html %}
