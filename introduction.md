@@ -20,7 +20,7 @@ This tutorial is intended to give an introduction to using <a href="http://getak
     </ul></li>
     <li><a href="/messaging-with-actors/">Messaging with Actors</a></li>
     <li><a href="/messaging-channels/">Messaging Channels</a></li>
-    <li>Message Construction</li>
+    <li><a href="/messaging-construction/">Message Construction</a></li>
     <li>Message Routing</li>
     <li>Message Transformation</li>
     <li>Message Endpoints</li>

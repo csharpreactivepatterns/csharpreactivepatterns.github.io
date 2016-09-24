@@ -11,32 +11,43 @@ For more details and full analysis of each pattern described in this section, pl
 by <a href="https://twitter.com/vaughnvernon">Vaughn Vernon</a>.
 </p>
 <a name="Sections">Sections</a>
-<ul>
-    <li>
-      <a href="#CommandMessage">Command Message</a>
-    </li>
-    <li>    
-      <a href="#DocumentMessage">Document Message</a>
-    </li>
-    <li>
-      <a href="#EventMessage">Event Message</a>
-    </li>
-    <li>
-      <a href="#RequestReply">Request-Reply</a>
-    </li>
-    <li>
-      <a href="#ReturnAddress">Return Address</a>
-    </li>
-    <li>
-      <a href="#CorrelationIdentifier">Correlation Identifier</a>
-    </li>
-    <li>
-      <a href="#MessageExpiration">Message Expiration</a>
-    </li>
-    <li>
-      <a href="#FormatIndicator">Format Indicator</a>
-    </li>
-</ul>
+  <ol>
+    <li><a href="/introduction/">Introduction</a></li>
+    <li><a href="/messaging-with-actors/">Messaging with Actors</a></li>
+	<li><a href="/messaging-channels/">Messaging Channels</a></li>
+    <li>Message Construction
+	<ul>
+		<li>
+		  <a href="#CommandMessage">Command Message</a>
+		</li>
+		<li>    
+		  <a href="#DocumentMessage">Document Message</a>
+		</li>
+		<li>
+		  <a href="#EventMessage">Event Message</a>
+		</li>
+		<li>
+		  <a href="#RequestReply">Request-Reply</a>
+		</li>
+		<li>
+		  <a href="#ReturnAddress">Return Address</a>
+		</li>
+		<li>
+		  <a href="#CorrelationIdentifier">Correlation Identifier</a>
+		</li>
+		<li>
+		  <a href="#MessageExpiration">Message Expiration</a>
+		</li>
+		<li>
+		  <a href="#FormatIndicator">Format Indicator</a>
+		</li>
+	</ul>
+	</li>
+    <li>Message Routing</li>
+    <li>Message Transformation</li>
+    <li>Message Endpoints</li>
+    <li>System Management and Infrastructure</li>
+  </ol>
 
 <h2 class="page-heading"><a name="CommandMessage">Command Message</a></h2>
 <p class="rss-subscribe">Use a Command Message to reliably invoke a procedure in another application.</p>
