@@ -41,7 +41,7 @@ by <a href="https://twitter.com/vaughnvernon">Vaughn Vernon</a>.
 		  <a href="#MessageBus">Message Bus</a>
 		</li>
 	</ul></li>
-    <li><a href="/messaging-construction/">Message Construction</a></li>
+    <li><a href="/message-construction/">Message Construction</a></li>
     <li>Message Routing</li>
     <li>Message Transformation</li>
     <li>Message Endpoints</li>
