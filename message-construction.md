@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Messaging Construction
+title: Message Construction
 permalink: /message-construction/
 categories: akka messaging .net csharp
 comments: true
